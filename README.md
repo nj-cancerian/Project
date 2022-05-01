@@ -10,8 +10,8 @@
 -download from https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 -extract the file and move under C:\Users\nitin.h.joshi\Music\MASTER SETUP FOR ENVS\kubectl 
 -run #SETX PATH  "C:\Users\nitin.h.joshi\Music\MASTER SETUP FOR ENVS\kubectl"  "Also define under env variables "
-
+-check kubectl version by #kubectl version --client
 #Configuring terraform 
  -check poweshell version $psversiontable.psversion
  -download azure cli from https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
- -az login 
+ -az login .
