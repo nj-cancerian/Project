@@ -69,3 +69,4 @@ adding a k8s account #hal config provider kubernetes account add my-k8s --provid
 ------ now switch to your local machine 
 Now we will install minio as its an object storage #Spinnaker needs the object storage to save the application data , we have to installa the minio in the same name space as of spinnaker 
 
+
