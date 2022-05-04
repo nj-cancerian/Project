@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "aks-rg" {
   name     = var.resource_group_name
   location = var.location
 }
-
+/*
 resource "azurerm_role_assignment" "role_acrpull" {  #for downloading the docker images 
   scope                            = azurerm_container_registry.acr.id
   role_definition_name             = "AcrPull"
@@ -17,6 +17,7 @@ resource "azurerm_container_registry" "acr" {
   sku                 = "Standard"
   admin_enabled       = false    #no one will get the admin password 
 }
+*/
 
 resource "azurerm_kubernetes_cluster" "aks" {   
   name                = var.cluster_name
