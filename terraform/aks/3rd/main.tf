@@ -14,4 +14,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name     = "k8s"
   location = "japaneast"
+   tags = {
+    environment = "Demo"
+  }
 }
