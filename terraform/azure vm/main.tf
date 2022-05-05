@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name      = test-vm
+  name      = "testapp"
   location  = var.resource_group_location
 }
 
@@ -120,6 +120,7 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
     username   = "azureuser"
     public_key = tls_private_key.example_ssh.public_key_openssh
   }
+
 
   boot_diagnostics {
     storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
